@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.TantoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="担当者マスタ" Height="450" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary Source="/Styles/StyleDic.xaml"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Label x:Name="tCodeLabel" Content="担当者コード" Margin="10,20,0,0" Style="{StaticResource lb-normal}" />
+        <TextBox x:Name="tCodeTextBox" Margin="100,20,0,0" Style="{StaticResource tx-normal}" />
+        <Label x:Name="bLabel" Content="入金伝票" Margin="10,50,0,0" Style="{StaticResource lb-normal}" />
+        <TextBox x:Name="tTextBox" Margin="100,50,0,0" Style="{StaticResource tx-normal}" />
+        <Label x:Name="cLabel" Content="入金伝票" Margin="10,80,0,0" Style="{StaticResource lb-normal}" />
+        <TextBox x:Name="dTextBox" Margin="100,80,0,0" Style="{StaticResource tx-normal}" />
+
+        <Button x:Name="add_button" Content="追加" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="75" Height="30" />
+    </Grid>
+</Window>

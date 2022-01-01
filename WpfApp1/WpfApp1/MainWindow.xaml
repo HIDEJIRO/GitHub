@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <ResourceDictionary Source="/Styles/StyleDic.xaml"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Button x:Name="nyukinButton" Content="入金伝票" Margin="10,20,0,0" Style="{StaticResource btn-big}"
+                />
+        <Button x:Name="tantoButton" Content="担当者マスタ" Margin="210,20,0,0" Style="{StaticResource btn-big}"
+                Click="TantoButton_Click" />
+        <Button x:Name="other1" Content="" Margin="405,20,0,0" Style="{StaticResource btn-big}"
+                />
+        <Button x:Name="other2" Content="" Margin="605,20,0,0" Style="{StaticResource btn-big}"
+                />
+    </Grid>
+</Window>
